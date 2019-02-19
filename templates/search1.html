@@ -1,0 +1,16 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+<form method="GET" action="/search1">
+<input type="text" name="dgfs"  placeholder="search" value="" required />
+<button class="btn btn-primary">finden</button>
+</form>
+<table border="0">
+			<tr><td><h4>Code no : {{ pp[0] }}</h4></td></tr>  
+			<tr><td><h4>Name : {{ pp[1] }}</h4></td></tr>  
+			<tr><td><h4>Address : {{ pp[2] }}</h4></td></tr>  
+			<tr><td><h4>Age : {{ pp[3] }}</h4></td></tr>  
+
+	</table>
+{% endblock %}

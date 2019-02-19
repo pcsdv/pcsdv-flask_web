@@ -1,0 +1,20 @@
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+ <ul> 
+ <li><h2>Name : {{ pdbss.name }}</h2></li>
+ </ul>
+ <table border="0">
+
+		 <tr><td><h3>Name : {{ pdbss.name }}</h3></td></tr>
+		 <tr><td><h3>Code no : {{ pdbss.code }}</h3></td></tr>
+		 <tr><td><h3>Address : {{ pdbss.address }}</h3></td></tr>
+		 <tr><td><h3>Age : {{ pdbss.age }} years </h3></td></tr>
+
+ </table>
+ 
+ {% endblock %}
+

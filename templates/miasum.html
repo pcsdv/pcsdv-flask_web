@@ -1,0 +1,34 @@
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+ <h2>  Medicine that related Miasm </h2>
+
+  <table border="1" cellpadding="5" cellspacing="5">
+ <thead>
+		 <th><h3>NO</h3></th>
+		 <th><h3>Name</h3></th>
+		 <th><h3>Psor-</h3></th>
+		 <th><h3>Psyco-</h3></th>
+		 <th><h3>Sylhili-</h3></th>
+		 <th><h3>Tuber-</h3></th>
+		 <th><h3>Act-Date-</h3></th>
+ </thead>
+
+ {%  for d in mydata %}
+ 	</tr>
+
+	<td><h4>{{ d[0]}}</h4> </td>
+	<td><h4>{{ d[1]}}</h4> </td>
+	<td><h4>{{ d[2] }}</h4> </td>
+	<td><h4>{{ d[3] }}</h4> </td>
+	<td><h4>{{ d[4] }}</h4> </td>
+	<td><h4>{{ d[5] }}</h4> </td>
+	<td><h4>{{ d[6] }}</h4> </td>
+ 	</tr>
+
+ {% endfor %}
+   <table>
+ {% endblock %}

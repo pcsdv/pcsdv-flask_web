@@ -1,0 +1,36 @@
+
+body {
+  color: black;
+  text-align: left;
+  background-color: blue;
+	}
+.jumbotron {
+	color:black;
+	background:cyan;
+	}	
+div, a {
+	color:red;
+	}	
+a .nav-item nav-link {
+	text-size:20px;
+}
+/* all h1 tag is effected */
+h1 {
+	border-color:blue;
+	border-width:thick;
+	border-style:solid;
+	background:red;
+}
+h2,h3,h4 {
+	border-color:red;
+	border-width:thick;
+	border-style:solid;
+	background:yellow;
+}
+* {
+color:black;
+background:red;
+}
+a[href]{
+color:blue;
+}

@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+ <h2> Patient's applied medicine </h2>
+
+  <table border="1" cellpadding="5" cellspacing="5">
+
+ {%  for data in mydata %}
+ 	<tr>
+ {%  for d in data %}
+
+	<td><h4>{{ d }}</h4> </td>
+
+ {% endfor %}
+
+ 	</tr>
+ {% endfor %}
+
+   <table>
+ {% endblock %}

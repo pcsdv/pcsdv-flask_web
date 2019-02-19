@@ -1,0 +1,16 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+ <h2> Some Books Information </h2>
+ {% for p in posts %}
+ <h4>Book Name :{{ p.name }}</h4>
+ <h4>Writer : {{ p.author }}</h4> 
+ <h4>Catagory :{{ p.catagory }}</h4>
+ <h4>Language :{{ p.language }}</h4>
+ <h4>Published : {{ p.year }}</h4>
+ {% endfor %}
+
+ {% endblock %}
+

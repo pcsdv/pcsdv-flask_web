@@ -1,0 +1,27 @@
+
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}"></link>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dems.css') }}"></link>
+{% if title %}
+<title>{{title}}</title>
+{% else %}
+<title>Blogs</title>
+{% endif %}
+</head>
+<body>
+    <!-- Navigation -->
+<div class="container">
+<div class="jumbotron">
+	{% include 'navbar2.html' %}
+
+	{% block content %}
+	{% endblock %}
+</div>
+</div>
+
+</body>
+</html>

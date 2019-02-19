@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+
+<table border='1'>
+
+	<thead>
+		<th><h4>Code</h4></th>
+		<th><h4>Name</h4></th>
+		<th><h4>Address</h4></th>
+		<th><h4>Age</h4></th>
+	</thead>
+
+		{% for i in search %}
+
+	<tr>
+		<td><h4>{{ i[0] }}</h4></td>
+
+<td><a href="{{url_for('search1' username=fname) }}"> <h4>{{ i[1] }}</h4></a></td>
+		<td><h4>{{ i[2] }}</h4></td>
+		<td><h4>{{ i[3] }}</h4></td>
+	</tr>
+
+	{% endfor %}
+
+</table>
+
+{% endblock %}
+

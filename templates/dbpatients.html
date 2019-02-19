@@ -1,0 +1,46 @@
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+<form method="POST" action="{{ url_for('dbpatient') }}">
+
+  <div class="form-row">
+     <div class="col-12 col-md-9 mb-2 mb-md-0">
+<input type="text" name="serv"class="form-control form-control-lg" placeholder="Enter your name">
+      </div>
+      <div class="col-12 col-md-3">
+<button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+              </div>
+             </div>
+           </form>
+     </div>
+
+	 <div> 
+ <table border="1">
+
+		 <thead>
+			<th><h4>NO</h4></th>
+			<th><h4>Name</h4></th>
+			<th><h4>Code</h4></th>
+			<th><h4>Address</h4></th>
+			<th><h4>Age</h4></th>
+		 </thead>		 
+			 {% for p in pdbss %}
+		 <tr>
+
+			<td><h4> {{ p.id }}</h4></td>
+<td><a href="{{url_for('shpw_dbpatient', username=p.name) }}"><h4>{{ p.name }}</h4></a></td>
+			<td><h4> {{ p.code }}</h4></td>
+			<td><h4>{{ p.address }}</h4></td>
+			<td><h4>{{ p.age }}</h4></td>
+
+		 </tr>
+			{% endfor %}
+ 
+ </table>
+	 </div>
+ {% endblock %}
+
