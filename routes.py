@@ -15,9 +15,6 @@ import mysql.connector
 #from aks.models import * 
 
 
-app.config ['SECRET_KEY'] = '4534a93f75226ef82ee94b4314f2c8c6'
-
-
 app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = ''
 app.config['MYSQL_DATABASE_DB'] = 'dolphin'
